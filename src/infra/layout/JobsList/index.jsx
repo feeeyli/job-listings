@@ -1,11 +1,12 @@
 import React from "react";
+import JobItem from "../../components/JobItem";
 import "./style.scss";
 
 const JobsList = ({ jobsList }) => {
 	return (
 		<ul className="jobs-list">
 			{jobsList.map((job) => (
-				<li key={job.id}>{job.company}</li>
+				<JobItem key={job.id} job={job} />
 			))}
 		</ul>
 	);
