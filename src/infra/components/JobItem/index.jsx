@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.scss";
 
 const JobItem = ({ job }) => {
 	return (
@@ -10,10 +11,12 @@ const JobItem = ({ job }) => {
 			/>
 			<div className="job-item__infos">
 				<div className="infos__header">
-					<h3 className="infos__company">{job.company}</h3>
-					<div className="infos__labels">
-						{job.new && <span className="label">NEW!</span>}
-						{job.featured && <span className="label">FEATURE</span>}
+					<h3 className="header__company">{job.company}</h3>
+					<div className="header__labels">
+						{job.new && <span className="label new">NEW!</span>}
+						{job.featured && (
+							<span className="label featured">FEATURED</span>
+						)}
 					</div>
 				</div>
 				<h2 className="infos__position">{job.position}</h2>
