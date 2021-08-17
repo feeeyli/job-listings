@@ -7,6 +7,7 @@
 	box-shadow: 0 2px 20px -10px #5aa5a266;
 	margin-bottom: 18px;
 	align-items: center;
+	position: relative;
 
 	&.feature {
 		border-left: 6px solid #5aa5a2;
@@ -62,5 +63,10 @@
 				color: #a8a9a8;
 			}
 		}
+	}
+
+	&__filters {
+		right: 32px;
+		position: absolute;
 	}
 }
