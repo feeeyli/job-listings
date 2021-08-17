@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
-function App() {
-	return <></>;
-}
+import jobs from "./data";
+import JobsList from "./infra/Layout/JobsList";
+
+const App = () => {
+	const [jobsList, setJobsList] = useState(jobs);
+
+	return (
+		<>
+			<JobsList jobsList={jobsList} />
+		</>
+	);
+};
 
 export default App;
