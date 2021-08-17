@@ -1,7 +1,10 @@
 import React from "react";
+import FilterMethod from "../../input/FilterMethod";
 import "./style.scss";
 
 const JobItem = ({ job }) => {
+	const jobFilters = [job.role, job.level, ...job.languages, ...job.tools];
+
 	return (
 		<li className={`job-item${job.featured ? " feature" : ""}`}>
 			<img
@@ -25,6 +28,11 @@ const JobItem = ({ job }) => {
 					<span className="footer__contract">{job.contract}</span>
 					<span className="footer__location">{job.location}</span>
 				</div>
+			</div>
+			<div className="job-item__filters">
+				{jobFilters.map((filter, key) => (
+					<FilterMethod filterName={filter} key={key} />
+				))}
 			</div>
 		</li>
 	);
