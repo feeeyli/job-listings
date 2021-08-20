@@ -6,7 +6,7 @@ import JobsList from "./infra/layout/JobsList";
 
 const App = () => {
 	const jobsList = jobs;
-	const [filterList] = useState(["Frontend", "CSS", "JavaScript"]);
+	const [filterList] = useState([]);
 
 	return (
 		<>

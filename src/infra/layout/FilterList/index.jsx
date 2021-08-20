@@ -1,5 +1,6 @@
 import React from "react";
 import FilterItem from "../../components/FilterItem";
+import "./style.scss";
 
 const FilterList = ({ filterList }) => {
 	return (

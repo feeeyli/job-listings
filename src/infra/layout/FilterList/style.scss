@@ -1,0 +1,27 @@
+.filter-list {
+	padding: 16px 32px;
+	border-radius: 7px;
+	display: flex;
+	justify-content: space-between;
+	background: #ffffff;
+	transform: translateY(-50%);
+	box-shadow: 0 2px 20px -10px #5aa5a266;
+	margin-bottom: -32px;
+
+	&__filters {
+		display: flex;
+	}
+
+	&__clear-filters {
+		background: transparent;
+		border: 0;
+		outline: none;
+		color: #5aa5a2;
+		font-weight: 700;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
