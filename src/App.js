@@ -10,7 +10,10 @@ const App = () => {
 
 	return (
 		<>
-			<FilterList filterList={filterList} />
+			<FilterList
+				filterList={filterList}
+				filterActions={{ filterList, setFilterList }}
+			/>
 			<JobsList
 				jobsList={jobsList}
 				filterActions={{ filterList, setFilterList }}
