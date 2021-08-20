@@ -7,7 +7,7 @@ const FilterItem = ({ filterName, filterActions }) => {
 	function handlerClick({ target }) {
 		const filterToRemove = target.dataset.filter;
 
-		setFilterList(filterList.filter((filter) => filter != filterToRemove));
+		setFilterList(filterList.filter((filter) => filter !== filterToRemove));
 	}
 
 	return (

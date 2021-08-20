@@ -3,6 +3,10 @@ import FilterItem from "../../components/FilterItem";
 import "./style.scss";
 
 const FilterList = ({ filterList, filterActions }) => {
+	function handlerClick() {
+		filterActions.setFilterList([]);
+	}
+
 	return (
 		<>
 			{filterList.length > 0 && (
@@ -16,7 +20,10 @@ const FilterList = ({ filterList, filterActions }) => {
 							/>
 						))}
 					</div>
-					<button className="filter-list__clear-filters">
+					<button
+						className="filter-list__clear-filters"
+						onClick={handlerClick}
+					>
 						Clear
 					</button>
 				</div>
