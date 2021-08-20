@@ -17,6 +17,7 @@ const App = () => {
 			<JobsList
 				jobsList={jobsList}
 				filterActions={{ filterList, setFilterList }}
+				filterList={filterList}
 			/>
 		</>
 	);
