@@ -1,0 +1,36 @@
+.filter-item {
+	background: #eafbf6;
+	border: 0;
+	padding: 6px 34px 3px 6px;
+	border-radius: 5px;
+	color: #5aa5a2;
+	margin-left: 8px;
+	font-weight: 700;
+	position: relative;
+	width: min-content;
+	cursor: default;
+
+	&__delete {
+		cursor: pointer;
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100%;
+		aspect-ratio: 1 / 1;
+		border-radius: 0 5px 5px 0;
+		border: 0;
+		outline: 0;
+		background: #5aa5a2;
+		transition: 0.2s ease-in-out;
+		display: grid;
+		place-content: center;
+
+		&:hover {
+			background: #2e3837;
+		}
+
+		img {
+			height: 12px;
+		}
+	}
+}
