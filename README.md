@@ -20,7 +20,7 @@ Este projeto consiste em um site para listar vagas empregos. Porem a funcionalid
 
 ### Via Web:
 
--   Sendo uma pagina web é muito simples de ser acessada. Basta entrar [neste link](https://pedrohsfontoura.github.io/job-listings) e ver o projeto no ar.
+-   Sendo uma pagina web é muito simples de ser acessada. Basta entrar [neste link](https://dev-jobs-listing.vercel.app/) e ver o projeto no ar.
 
 ### Localmente
 
