@@ -10,6 +10,9 @@
 
 	&__filters {
 		display: flex;
+		gap: 14px;
+		flex-wrap: wrap;
+		max-width: 900px;
 	}
 
 	&__clear-filters {

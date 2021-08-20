@@ -6,12 +6,15 @@ import JobsList from "./infra/layout/JobsList";
 
 const App = () => {
 	const jobsList = jobs;
-	const [filterList] = useState([]);
+	const [filterList, setFilterList] = useState([]);
 
 	return (
 		<>
 			<FilterList filterList={filterList} />
-			<JobsList jobsList={jobsList} />
+			<JobsList
+				jobsList={jobsList}
+				filterActions={{ filterList, setFilterList }}
+			/>
 		</>
 	);
 };

@@ -2,7 +2,7 @@ import React from "react";
 import FilterMethod from "../../input/FilterMethod";
 import "./style.scss";
 
-const JobItem = ({ job }) => {
+const JobItem = ({ job, filterActions }) => {
 	const jobFilters = [job.role, job.level, ...job.languages, ...job.tools];
 
 	return (
@@ -31,7 +31,11 @@ const JobItem = ({ job }) => {
 			</div>
 			<div className="job-item__filters">
 				{jobFilters.map((filter, key) => (
-					<FilterMethod filterName={filter} key={key} />
+					<FilterMethod
+						filterName={filter}
+						key={key}
+						filterActions={filterActions}
+					/>
 				))}
 			</div>
 		</li>
